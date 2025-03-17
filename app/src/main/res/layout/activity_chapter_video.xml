@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/videos_background"
+    tools:context=".ChapterVideoActivity">
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/back_videos_ic" />
+
+    <TextView
+        android:id="@+id/videoChapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/closeBtn"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/_22ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="Chapter Name"/>
+
+    <TextView
+        android:id="@+id/videoSubject"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/videoChapter"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/_14ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="Subject Name"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        tools:listitem="@layout/row_video"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp" />
+
+</RelativeLayout>

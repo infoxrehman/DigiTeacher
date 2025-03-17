@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/_28ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_52sdp"
+        android:text="Welcome!"/>
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/welcomeLabel"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/_20ssp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Fullname"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourses"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/fullName"
+        tools:listitem="@layout/row_course"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_height="@dimen/_470sdp"/>
+
+</RelativeLayout>

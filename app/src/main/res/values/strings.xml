@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Digi Teacher</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="school">School</string>
+    <string name="clas">Class</string>
+    <string name="code">Code</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="explore">Explore</string>
+    <string name="noAccount">Don\'t have an account</string>
+    <string name="haveAccount">Already have an account</string>
+    <string name="addBook">Add book</string>
+    <string name="bookCode">Book code</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_my_account">My Account</string>
+    <string name="nav_add_books">Add Books</string>
+    <string name="nav_logout">Sign Out</string>
+
+</resources>

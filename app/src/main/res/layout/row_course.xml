@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_4sdp"
+    android:background="@drawable/back"
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    android:layout_marginTop="@dimen/_10sdp" >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/courseImage"
+        android:layout_width="@dimen/_58sdp"
+        android:layout_height="@dimen/_68sdp"
+        android:padding="@dimen/_2sdp"
+        android:scaleType="center"
+        android:layout_alignParentStart="true"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="@dimen/_1sdp"
+        android:layout_margin="@dimen/_8sdp"
+        app:shapeAppearance="@style/styleRoundCornersImage"
+        android:src="@drawable/image_src" />
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/courseImage"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_toStartOf="@+id/goBtn"
+        android:layout_toEndOf="@id/courseImage"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Course Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseName"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_toStartOf="@+id/goBtn"
+        android:layout_toEndOf="@id/courseImage"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:text="Description"
+        android:textColor="#5C6D78"
+        android:textSize="@dimen/_10ssp" />
+
+    <ImageView
+        android:id="@+id/goBtn"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_36sdp"
+        android:padding="@dimen/_8sdp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:src="@drawable/arrow_btn"
+        app:tint="@color/gray" />
+
+</RelativeLayout>

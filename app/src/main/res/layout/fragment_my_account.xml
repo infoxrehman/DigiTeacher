@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    tools:context=".MyAccountFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetPasswordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_220sdp"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:background="@drawable/login_register_signin_btn"
+        android:elevation="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="@dimen/_8sdp"
+        android:stateListAnimator="@null"
+        android:text="@string/resetPassword"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/resetPasswordBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_48sdp"
+        android:background="@drawable/login_register_signin_btn"
+        android:elevation="@dimen/_4sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="@dimen/_8sdp"
+        android:stateListAnimator="@null"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:backgroundTint="@null" />
+
+</RelativeLayout>
